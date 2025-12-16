@@ -42,6 +42,11 @@ analyze_user_repos <- function(username) {
     all_languages <- list()
     
     for (repo in repos) {
+      # フォークしたリポジトリはスキップ
+      if (isTRUE(repo$fork)) {
+        next
+      }
+      
       cat("  -", repo$name, "\n")
       
       langs <- tryCatch({
