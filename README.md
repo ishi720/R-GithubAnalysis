@@ -32,13 +32,17 @@ source("main.R")
 
 <img width="1500" height="1575" alt="language_bar" src="https://github.com/user-attachments/assets/3eb91955-0367-4820-8799-689c72bdf33b" />
 
-## 月ごとのコミット数
+## 月・曜日ごとのコミット数
 
 ```r
 source("CommitAnalysis.R")
 ```
 
 <img width="1800" height="900" alt="commits_by_month_language" src="https://github.com/user-attachments/assets/7342eb3b-31fa-41d3-a2d1-f52b77983f04" />
+
+<img width="2100" height="900" alt="commits_heatmap" src="https://github.com/user-attachments/assets/be418fe9-427a-4094-8cbc-c8c282fbf49a" />
+
+
 
 ## Issueの作成と解決
 
