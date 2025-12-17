@@ -2,6 +2,9 @@
 # GitHub ユーザー 言語別コード量分析スクリプト
 # =============================================================================
 
+# 共通設定ファイルの読み込み
+source("config.R")
+
 # 必要なパッケージのインストール（初回のみ）
 install_if_missing <- function(packages) {
   for (pkg in packages) {
@@ -13,14 +16,6 @@ install_if_missing <- function(packages) {
 }
 
 install_if_missing(c("gh", "ggplot2", "dplyr", "scales", "RColorBrewer"))
-
-# =============================================================================
-# 設定
-# =============================================================================
-
-# 分析対象のGitHubユーザー名を指定
-# 空の場合は実行時に入力を求められます
-TARGET_USER <- "ishi720"
 
 # =============================================================================
 # ユーザーの全リポジトリを分析
@@ -185,7 +180,7 @@ main <- function() {
   cat("\nグラフを作成中...\n")
   
   # 出力ディレクトリの設定と作成
-  output_dir <- file.path(getwd(), "Documents")
+  output_dir <- OUTPUT_DIR
   if (!dir.exists(output_dir)) {
     dir.create(output_dir, recursive = TRUE)
   }

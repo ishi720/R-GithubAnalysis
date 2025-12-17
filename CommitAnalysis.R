@@ -2,6 +2,9 @@
 # GitHub ユーザー コミット数・言語分析スクリプト
 # =============================================================================
 
+# 共通設定ファイルの読み込み
+source("config.R")
+
 # 必要なパッケージのインストール（初回のみ）
 install_if_missing <- function(packages) {
   for (pkg in packages) {
@@ -17,9 +20,6 @@ install_if_missing(c("gh", "ggplot2", "dplyr", "scales", "RColorBrewer", "lubrid
 # =============================================================================
 # 設定
 # =============================================================================
-
-# 分析対象のGitHubユーザー名を指定
-TARGET_USER <- "ishi720"
 
 # 分析期間（過去何年分を取得するか）
 YEARS_TO_ANALYZE <- 2
@@ -295,7 +295,7 @@ main <- function() {
   cat("\nグラフを作成中...\n")
   
   # 出力ディレクトリの設定と作成
-  output_dir <- file.path(getwd(), "Documents")
+  output_dir <- OUTPUT_DIR
   if (!dir.exists(output_dir)) {
     dir.create(output_dir, recursive = TRUE)
   }
