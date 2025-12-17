@@ -30,15 +30,17 @@ renv::restore()
 source("main.R")
 ```
 
-<img width="1500" height="1575" alt="language_bar" src="https://github.com/user-attachments/assets/3eb91955-0367-4820-8799-689c72bdf33b" />
+<img width="1500" height="1575" alt="language_bar" src="https://raw.githubusercontent.com/ishi720/R-GithubAnalysis/refs/heads/main/Documents/language_bar.png" />
 
-## 月ごとのコミット数
+## 月・曜日ごとのコミット数
 
 ```r
 source("CommitAnalysis.R")
 ```
 
-<img width="1800" height="900" alt="commits_by_month_language" src="https://github.com/user-attachments/assets/7342eb3b-31fa-41d3-a2d1-f52b77983f04" />
+<img width="1800" height="900" alt="commits_by_month_language" src="https://raw.githubusercontent.com/ishi720/R-GithubAnalysis/refs/heads/main/Documents/commits_by_month_language.png" />
+
+<img width="2100" height="900" alt="commits_heatmap" src="https://raw.githubusercontent.com/ishi720/R-GithubAnalysis/refs/heads/main/Documents/commits_heatmap.png" />
 
 ## Issueの作成と解決
 
@@ -46,5 +48,5 @@ source("CommitAnalysis.R")
 source(IssuesAnalysis.R)
 ```
 
-<img width="1800" height="900" alt="issues_by_month_line" src="https://github.com/user-attachments/assets/fc4a0bc3-c3c0-47c9-8163-40860ddf321c" />
+<img width="1800" height="900" alt="issues_by_month_line" src="https://raw.githubusercontent.com/ishi720/R-GithubAnalysis/refs/heads/main/Documents/issues_by_month_line.png" />
 
