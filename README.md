@@ -38,7 +38,7 @@ source("LanguageAnalysis.R")
 source("CommitAnalysis.R")
 ```
 
-<img width="1800" height="900" alt="commits_by_month_language" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/commits_by_month_language.png" />
+<img width="1800" height="900" alt="commits_heatmap" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/commits_by_month_language.png" />
 
 <img width="2100" height="900" alt="commits_heatmap" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/commits_heatmap.png" />
 
@@ -48,7 +48,16 @@ source("CommitAnalysis.R")
 source("Repoanalysis.R")
 ```
 
-<img width="1800" height="900" alt="commits_by_month_language" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/repos_by_year.png" />
+<img width="1800" height="900" alt="repos_by_year" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/repos_by_year.png" />
+
+## リポジトリのタグクラウド
+
+```r
+source("TagAnalysis.R")
+```
+
+<img width="1800" height="900" alt="topics_wordcloud" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/topics_wordcloud.png" />
+
 
 
 ## Issueの作成と解決
