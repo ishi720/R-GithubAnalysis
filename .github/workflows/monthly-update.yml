@@ -29,7 +29,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c("gh", "ggplot2", "dplyr", "scales", "RColorBrewer", "lubridate", "tidyr", "ggwordcloud"), repos = "https://cran.r-project.org")'
+          Rscript --vanilla -e 'install.packages(c("gh", "ggplot2", "dplyr", "scales", "RColorBrewer", "lubridate", "tidyr", "ggwordcloud"), repos = "https://cran.r-project.org")'
 
       - name: Create output directory
         run: mkdir -p Documents
