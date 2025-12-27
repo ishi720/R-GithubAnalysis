@@ -50,6 +50,15 @@ source("Repoanalysis.R")
 
 <img width="1800" height="900" alt="repos_by_year" src="https://raw.githubusercontent.com/ishi720/GithubDashboard/refs/heads/main/Documents/repos_by_year.png" />
 
+## リポジトリ一覧
+
+
+```r
+source("RepoListExport.R")
+```
+
+`repos_list.json` を出力
+
 ## リポジトリのタグクラウド
 
 ```r
